@@ -1,96 +1,215 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
-		<title>Shivam's Blog on Security, Privacy and my fun little Projects ;)</title>
-		<style type="text/css">
+<meta charset="UTF-8">
+<title>Penetration Tester & Security Consultant | Shivam Bathla</title>
+<meta name="description" content="Freelance penetration tester and security consultant with 7+ years of experience. OSCP, OSWE certified.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-		#wrapper {
-				margin: 0 auto;
-				max-width: 700px;
-				padding: 2px;
-		}
-
-		header#page-title {
-				margin: 2px;
-				display: flex
-		}
-
-		a.articleLink {
-				text-decoration: none;
-				font-style: italic;
-		}
-
-		body {
-				margin: 0 auto;
-				padding: 20px;
-				max-width: 800px;
-				font-family: 'Open Sans', sans-serif;
-		}
-
-		pre {
-				background-color: black;
-				color: white;
-				overflow-x: auto;
-				padding: 20px;
-		}
-
-		code {
-				font-family: 'Share Tech Mono', monospace;
-		}
-
-		header {
-				text-align: center;
-		}
-
-		#article-hexcode {
-				font-size: 40px;
-				font-family: 'Press Start 2P', cursive;
-		}
-
-		h2 {
-				padding-bottom: 5px;
-				border-bottom: 2px solid gray;
-		}
-
-		footer {
-				text-align: center;
-		}
-
-		blockquote {
-				border-left: 5px solid gray;
-				margin: 0;
-				padding-left: 40px;
-				font-style: italic;
-				background-color: #f8f8f8;
-				padding-top: 5px;
-				padding-bottom: 5px;
-		}	 
-
-</style>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          navy: '#0F172A',
+          slatecustom: '#4B5563',
+          emeraldaccent: '#10B981',
+        }
+      }
+    }
+  }
+</script>
 
 </head>
-<body>
+<body class="text-slatecustom">
 
-	<header>
-    	<h1 id="article-title">Index</h1>
-	</header>
-	
-	<div id="wrapper">
-		<section id="article">
-			<ul>
-				<!-- [{u'content': u'shellcode101', u'index': u'0x00', u'title': u'Writing your own Shellcode'}] -->
-					<li>0x00 - 
-						<a class="articleLink" href="0x00 - Writing your own Shellcode.html">Writing your own Shellcode</a>
-							
-						</span>
-					</li>
-			</ul>
-		</section>
-	</div>
+<!-- Header -->
+<header class="bg-white border-b border-gray-200 sticky top-0 left-0 w-full z-10">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+    <div class="text-lg font-semibold text-navy">Shivam Bathla</div>
+    <nav class="hidden md:flex space-x-8 text-sm text-slatecustom">
+      <div class="hidden md:flex space-x-7 mt-1 text-sm text-slatecustom">
+        <a href="#" class="text-navy font-semibold relative inline-block group">
+          Home
+          <span class="mt-1 absolute bottom-0 left-0 h-0.5 w-full bg-emeraldaccent scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
+        </a>
+        <a href="#services" class="text-navy font-semibold font-semibold relative inline-block group">
+          Services
+          <span class="mt-1 absolute bottom-0 left-0 h-0.5 w-full bg-emeraldaccent scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
+        </a>
+        <a href="#engagement" class="text-navy font-semibold relative inline-block group">
+          Engagement
+          <span class="mt-1 absolute bottom-0 left-0 h-0.5 w-full bg-emeraldaccent scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
+        </a>
+        <a href="#industries" class="text-navy font-semibold relative inline-block group">
+          Industries
+          <span class="mt-1 absolute bottom-0 left-0 h-0.5 w-full bg-emeraldaccent scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
+        </a>
+        <a href="#certifications" class="text-navy font-semibold relative inline-block group">
+        Certifications
+          <span class="mt-1 absolute bottom-0 left-0 h-0.5 w-full bg-emeraldaccent scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
+        </a>
+        <a href="#about" class="text-navy font-semibold relative inline-block group">
+          About
+          <span class="mt-1 absolute bottom-0 left-0 h-0.5 w-full bg-emeraldaccent scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
+        </a>
+        <a href="#contact" class="text-navy font-semibold relative inline-block group">
+          Contact
+          <span class="mt-1 absolute bottom-0 left-0 h-0.5 w-full bg-emeraldaccent scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
+        </a>
+      </div>
+      <div class="flex">
+        <a href="mailto:shivam.opensource@gmail.com">
+          <img src="images/mail.png" width="28" class="ml-10 mr-4 hover:shadow-sm hover:shadow-yellow-500/50" />
+        </a>
+        <a href="https://www.linkedin.com/in/shivambathla" target="_blank">
+          <img src="images/linkedin.png" width="28" class="mr-4 hover:shadow-sm hover:shadow-blue-500/50" />
+        </a>
+        <a href="https://github.com/DeadlyHollows" target="_blank">
+          <img src="images/github.png" width="28" class="mr-4 hover:shadow-sm hover:shadow-none" />
+        </a>
+        <a href="https://medium.com/@shivam_bathla" target="_blank">
+          <img src="images/blog.png" width="28" class="mr-4 hover:shadow-sm hover:shadow-gray-500/50" />
+        </a>
+      </div>
+    </nav>
+    <a href="#contact" class="bg-emeraldaccent text-white px-5 py-2 rounded text-sm font-medium hover:shadow-sm hover:shadow-green-500/50">
+      Free Initial Pentest
+    </a>
+  </div>
+</header>
 
-	<footer>
-		<a href="about.html">about</a> .
-		<a href="index.html">root</a>
-	</footer>
+<!-- Initial -->
+<section class="bg-gray-50 py-20 max-w-5xl mx-auto px-6">
+  <h1 class="text-4xl md:text-4xl font-semibold text-navy">Penetration Testing & Security Consulting Services</h1>
+  <p class="mt-6 text-lg text-slatecustom">I help organizations identify and mitigate real-world security risks across web applications, cloud platforms, infrastructure, and emerging technologies.</p>
+  <p class="mt-4 text-sm text-gray-500">
+    7+ years experience 
+    • Extensive Middle East engagements 
+    • OSCP / OSWE certified 
+  </p>
+
+  <div class="mt-10 flex gap-4">
+    <a href="#contact"
+       class="bg-emeraldaccent text-white px-6 py-3 rounded font-medium hover:opacity-90 hover:shadow-sm hover:shadow-green-500/50">
+      Request Free Initial Pentest
+    </a>
+    <a href="#services"
+       class="border border-gray-300 px-6 py-3 rounded hover:bg-white hover:shadow-sm hover:shadow-gray-500/50">
+      View Services
+    </a>
+  </div>
+</section>
+
+<!-- Security Services -->
+<section id="services" class="bg-white border-t border-gray-200 py-20 max-w-5xl mx-auto px-6 font-semibold">
+  <h1 class="text-3xl font-semibold text-navy">Security Services</h1>
+  <ul class="mt-8 grid md:grid-cols-2 gap-4">
+    <li class="flex"><img alt="Web & API Penetration Testing" src="images/web-api-pentesting.png" width="40"><span class="mx-5 py-2">Web & API Penetration Testing</span></li>
+    <li class="flex"><img alt="Source Code Review" src="images/source-code-review.png" width="40"><span class="mx-5 py-2">Source Code Review</span></li>
+    <li class="flex"><img alt="Mobile App Pentesting (Android & iOS)" src="images/mobile-pentesting.png" width="40"><span class="mx-5 py-2">Mobile App Pentesting (Android & iOS)</span></li>
+    <li class="flex"><img alt="Infrastructure & Active Directory Pentesting" src="images/infra-and-internal-pentesting.png" width="40"><span class="mx-5 py-2">Infrastructure & Active Directory Pentesting</span></li>
+    <li class="flex"><img alt="Cloud Pentesting" src="images/cloud-pentesting.png" width="40"><span class="mx-5 py-2">Cloud Pentesting</span></li>
+    <li class="flex"><img alt="AI / LLM Pentesting" src="images/ai-llm-pentesting.png" width="40"><span class="mx-5 py-2">AI / LLM Pentesting</span></li>
+    <li class="flex"><img alt="Purple Teaming, SOC Validation" src="images/iot-pentesting.png" width="40"><span class="mx-5 py-2">IoT Pentesting</span></li>
+    <li class="flex"><img src="images/purple-teaming.png" width="40"><span class="mx-5 py-2">Purple Teaming</span></li>
+    <li class="flex"><img alt="Security Research" src="images/security-research.png" width="40"><span class="mx-5 py-2">Security Research</span></li>
+    <li class="flex"><img alt="Cyber security trainings, Capture the flags & Cyber Ranges" src="images/training.png" width="40"><span class="mx-5 py-2">Security Trainings, CTFs & Cyber Ranges</span></li>
+  </ul>
+</section>
+
+<!-- Engagement -->
+<section id="engagement" class="bg-gray-50 border-t border-gray-200 py-20 max-w-5xl mx-auto px-6">
+  <h1 class="text-3xl font-semibold text-navy">Engagement Model</h1>
+  <p class="mt-6">Flexible consulting engagements including a <a href="#contact"><span class="font-semibold relative inline-block group text-emeraldaccent">
+    free initial limited-scope pentest
+    <span class="absolute bottom-0 left-0 h-0.5 w-full bg-emeraldaccent scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
+  </span></a>.</p>
+</section>
+
+<!-- Industries Served -->
+<section class="bg-white border-t border-gray-200 py-20 max-w-5xl mx-auto px-6 font-semibold" id="industries">
+  <h1 class="text-3xl font-semibold text-navy">Industries Served</h1>
+  <ul class="mt-8 grid md:grid-cols-2 gap-4">
+    <li class="flex"><img src="images/oil-and-gas.png" width="40"><span class="mx-5 py-2">Oil & Gas</span></li>
+    <li class="flex"><img src="images/defense.png" width="40"><span class="mx-5 py-2">Defense</span></li>
+    <li class="flex"><img src="images/banking.png" width="40"><span class="mx-5 py-2">Banking & Finance</span></li>
+    <li class="flex"><img src="images/healthcare-and-insurance.png" width="40"><span class="mx-5 py-2">Healthcare & Insurance</span></li>
+    <li class="flex"><img src="images/transportation.png" width="40"><span class="mx-5 py-2">Transportation</span></li>
+    <li class="flex"><img src="images/education.png" width="40"><span class="mx-5 py-2">Education</span></li>
+    <li class="flex"><img src="images/youth-and-sports.png" width="40"><span class="mx-5 py-2">Youth and Sports</span></li>
+    <li class="flex"><img src="images/govt-and-private.png" width="40"><span class="mx-5 py-2">Government & Private Enterprises</span></li>
+  </ul>
+</section>
+
+<!-- Certifications -->
+<section id="certifications" class="bg-gray-50 border-t border-gray-200 py-20 max-w-5xl mx-auto px-6">
+  <h1 class="text-3xl font-semibold text-navy">Certifications</h1>
+  <div class="grid md:grid-cols-2 gap-10 mt-10">
+    <a href="https://www.credential.net/0c44b84c-c4e9-475a-b008-4bebbb5f8fc5" target="_blank">
+      <img src="images/oscp.png" class="hover:shadow-xl hover:shadow-orange-500/50" /></a>
+    </a>
+    <a href="https://www.credential.net/1e1d1926-4487-4d48-870d-a614088ea437" target="_blank">
+      <img src="images/oswe.png" class="hover:shadow-xl hover:shadow-emerald-500/50" />
+    </a>
+    <a href="https://credsverse.com/credentials/64653591-0d3e-40ab-979f-c281cc851062" target="_blank">
+      <img src="images/capt.png" class="hover:shadow-xl hover:shadow-teal-500/50" />
+    </a>
+    <a href="https://credsverse.com/credentials/2f7fc17c-18b1-4542-b1b3-83033f019e16" target="_blank">
+      <img src="images/cipt.png" class="hover:shadow-xl hover:shadow-teal-500/50" />
+    </a>
+  </div>
+</section>
+
+<!-- About -->
+<section id="about" class="border-t border-gray-200 bg-white py-20 max-w-5xl mx-auto px-6">
+  <h1 class="text-3xl font-semibold text-navy">About</h1>
+  <div class="flex my-6">
+    <img src="images/shivam.png" width="360">
+    <div class="mt-6 ml-8">
+      <p class="mb-10">I'm an independent <b>application security</b> and <b>offensive security professional</b> with <b>7+ years</b> of experience helping organizations <b>identify and fix real-world security issues</b> across <b>web applications</b>, <b>APIs</b>, <b>Active Directory environments</b>, <b>IoT</b> and <b>cloud platforms</b>.</p>
+
+      <p class="my-10">My work focuses on <b>uncovering high-impact vulnerabilities</b> that automated scanners and checklist-based assessments miss - particularly in authentication, authorization, business logic, and complex enterprise environments.</p>
+
+      <p class="mt-10">If you're looking for a security professional who combines deep technical execution with ongoing research-driven insight, feel free to <a href="mailto:shivam.opensource@gmail.com" class="font-semibold relative inline-block group text-emeraldaccent">
+        reach out
+        <span class="mt-1 absolute bottom-0 left-0 h-0.5 w-full bg-emeraldaccent scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
+      </a>.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="bg-gray-50 border-t border-gray-200 py-20 max-w-5xl mx-auto px-6">
+  <h1 class="text-3xl font-semibold text-navy">Contact</h1>
+  <p class="mt-6">
+    <a href="mailto:shivam.opensource@gmail.com" class="font-semibold relative inline-block group text-emeraldaccent">
+      Reach out
+      <span class="mt-1 absolute bottom-0 left-0 h-0.5 w-full bg-emeraldaccent scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
+    </a> to discuss your security requirements.</p>
+  <div class="flex mt-6">
+    <a href="mailto:shivam.opensource@gmail.com">
+      <img src="images/mail.png" width="40" class="mr-10 hover:shadow-sm hover:shadow-yellow-500/50" />
+    </a>
+    <a href="https://www.linkedin.com/in/shivambathla" target="_blank">
+      <img src="images/linkedin.png" width="40" class="mr-10 hover:shadow-sm hover:shadow-blue-500/50" />
+    </a>
+    <a href="https://github.com/DeadlyHollows" target="_blank">
+      <img src="images/github.png" width="40" class="mr-10 hover:shadow-sm hover:shadow-none" />
+    </a>
+    <a href="https://medium.com/@shivam_bathla" target="_blank">
+      <img src="images/blog.png" width="40" class="mr-10 hover:shadow-sm hover:shadow-gray-500/50" />
+    </a>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-white border-t border-gray-200">
+  <div class="max-w-7xl mx-auto px-6 py-8 text-sm text-gray-600 flex justify-center font-semibold">
+    <p>&copy; 2026 Shivam Bathla — Independent Security Consultant</p>
+  </div>
+</footer>
 
 </body>
 </html>
